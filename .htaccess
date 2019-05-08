@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([a-z]*)$  /index.php/([a-z]*) [L]
+RewriteRule ^blog/([a-z]*)$  /index.php/blog/([a-z]*) [L]
