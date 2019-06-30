@@ -4,13 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9a4dc06fd9ab374d88ae73c4a7e07866
+class ComposerStaticInitfcb6d876360565035e6f65bef21994eb
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
@@ -33,10 +33,6 @@ class ComposerStaticInit9a4dc06fd9ab374d88ae73c4a7e07866
         'C' => 
         array (
             'Controllers\\' => 12,
-        ),
-        'B' => 
-        array (
-            'Blog\\' => 5,
         ),
     );
 
@@ -69,17 +65,13 @@ class ComposerStaticInit9a4dc06fd9ab374d88ae73c4a7e07866
         array (
             0 => __DIR__ . '/../..' . '/controllers',
         ),
-        'Blog\\' => 
-        array (
-            0 => '/',
-        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9a4dc06fd9ab374d88ae73c4a7e07866::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9a4dc06fd9ab374d88ae73c4a7e07866::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfcb6d876360565035e6f65bef21994eb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfcb6d876360565035e6f65bef21994eb::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
